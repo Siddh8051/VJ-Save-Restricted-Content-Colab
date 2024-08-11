@@ -66,10 +66,10 @@ def progress(current, total, message, type):
 @Client.on_message(filters.command(["start"]))
 async def send_start(client: Client, message: Message):
     buttons = [[
-        InlineKeyboardButton("𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭", url = "https://t.me/Farooq_is_King")
+        InlineKeyboardButton("", url = "")
     ],[
-        InlineKeyboardButton('🔍 WD Topic Group', url='https://t.me/Op_Topic_Group'),
-        InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Opleech_WD')
+        InlineKeyboardButton('', url=''),
+        InlineKeyboardButton('', url='')
 	]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(message.chat.id, f"<b>👋 Hi {message.from_user.mention}, I am Save Restricted Content Bot, I can send you restricted content by its post link.\n\nFor downloading restricted content /login first.\n\nKnow how to use bot by - /help</b>", reply_markup=reply_markup, reply_to_message_id=message.id)
